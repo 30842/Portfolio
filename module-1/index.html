@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentation Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom right, #00bcd4, #2196f3);
+        color: #fff;
+        overflow-x: hidden;
+    }
+    header {
+        background: #333;
+        padding: 20px;
+        text-align: center;
+    }
+    h1 {
+        margin: 0;
+        font-size: 36px;
+    }
+    .container {
+        padding: 20px;
+    }
+    .section {
+        margin-bottom: 30px;
+    }
+    .section h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .section p {
+        font-size: 18px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1 >Documentation Page</h1>
+</header>
+
+<div class="container">
+    <div class="section">
+       
+        <p>Welcome to the documentation for web development. In this guide, you will find comprehensive information about the various aspects of web development</p>
+        <h2>Introduction</h2>
+        <p>What is Web Development?<br>
+            Web development refers to the process of building and maintaining websites and web applications. It involves several disciplines, including web design, front-end development, back-end development, and web server configuration. Web developers use a combination of programming languages, frameworks, and tools to create functional and visually appealing websites.</p>
+    </div>
+
+    <div class="section">
+        <h2 style="color:black; font-weight: bold;">Assignment 1</h2>
+        <p>This documentation serves as a guide for creating forms in web development.
+             Forms are essential elements of web applications that allow users to input data and interact with websites.
+              In this guide, you will learn how to create forms using HTML and enhance them with CSS and JavaScript.
+           <br> HTML Form Structure<br>
+            To create a basic form in HTML, you use the' form 'element along with various input elements such as text fields, email fields, text areas, and dropdown menus.</p>
+        <img src="./assign1.png" alt="assign 1">
+    </div>
+
+    <div class="section">
+        <h2 style="color:black; font-weight: bold;">Assignment 2</h2>
+        <p>Creating a digital resume on a web page offers a unique opportunity to showcase your skills and experiences in an engaging and interactive format. </p>
+       <br> HTML tags like 'img' are utilized to display images within the resume, allowing users to showcase their portfolio, projects, or personal branding. The 'img' tag requires the src attribute to specify the image file's source and the alt attribute to provide alternative text for accessibility purposes.
+
+
+        
+        <img src="./assign2.png" alt="assign 2">
+    </div>
+    <div class="section">
+        <h2 style="color:black; font-weight: bold;">Assignment 3</h2>
+        <p>Creating buttons with different transitions.<br>
+            In HTML, buttons can be created using the 'button' element. The 'button' element allows you to create clickable buttons that can trigger actions or perform functions when clicked.</p>
+        <img src="./assign3.png" alt="assign 3">
+    </div>
+    <div class="section">
+        <h2 style="color:black; font-weight: bold;">Assignment 4</h2>
+        <p>Creating a world clock involves displaying the current time in various time zones across the globe. <br>
+            By combining HTML, CSS, and JavaScript, you can create a world clock that displays the current time in different time zones. Customize the time zones and styling according to your preferences to create an interactive and informative world clock for your web page.
+
+        </p>
+        <img src="./assign4.png" alt="assign 4">
+    </div>
+    <div class="section">
+        <h2 style="color:black; font-weight: bold;">Assignment 5</h2>
+        <p>n this documentation, I will outline the process and rationale behind the creation of my engineering portfolio. This portfolio serves as a showcase of my skills, projects, and achievements as a first-year engineering student.
+
+            1. Portfolio Objectives:
+            
+            Define the purpose of the portfolio: To demonstrate proficiency in engineering concepts, showcase projects, and highlight skills.
+            Identify the target audience: Potential employers, academic institutions, and peers in the engineering field.
+            Outline specific goals: To showcase academic achievements, practical skills, and project experiences.
+            2. Portfolio Structure:
+            
+            Overview of sections: Introduction, Academic Background, Projects, Skills, Achievements, and Conclusion.
+            Explanation of organization: Each section is designed to provide a comprehensive overview of my academic and practical experiences in engineering.
+            3. Academic Background:
+            
+            Summary of academic institution and program: Mention the university, major, and any relevant coursework.
+            GPA and academic achievements: Highlight any academic honors, scholarships, or awards received.
+            4. Projects:
+            
+            Description of each project: Provide a brief overview of the project, including objectives, methodologies, and outcomes.
+            Technical details: Include information about the tools, software, and techniques used in each project.
+            Personal contributions: Outline your role in the project and the specific tasks you undertook.
+            Results and outcomes: Discuss any challenges faced, lessons learned, and the impact of the project.
+        </p>
+        <img src="./assign5.png" alt="assign 5">
+    </div>
+
+<script>
+    // Example JavaScript for adding animations
+    window.addEventListener('load', function() {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach((section, index) => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = `opacity 0.5s ease ${index / 5}s, transform 0.5s ease ${index / 5}s`;
+
+            setTimeout(() => {
+                section.style.opacity = '1';
+                section.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    });
+</script>
+
+</body>
+</html>
